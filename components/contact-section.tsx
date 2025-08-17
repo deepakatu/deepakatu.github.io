@@ -137,131 +137,165 @@ ${formData.name}`)
 
           {/* Main Content Grid */}
           <div className="grid lg:grid-cols-2 gap-12">
-            {/* Left Column - Contact Form */}
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <Card className="p-8 hover-lift border-0 shadow-lg bg-background/80 backdrop-blur-sm">
-                <CardContent className="space-y-6 p-0">
-                  <div className="space-y-2">
-                    <h3 className="text-2xl font-bold text-foreground">Send a Message</h3>
-                    <p className="text-muted-foreground">
-                      I'm interested in hearing about new opportunities and collaborations
-                    </p>
-                  </div>
-
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div className="relative space-y-2">
-                        <label htmlFor="name" className="text-sm font-medium text-foreground">
-                          Full Name
-                        </label>
-                        <div className="relative">
-                          <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-                          <Input
-                            id="name"
-                            name="name"
-                            type="text"
-                            placeholder="Your full name"
-                            value={formData.name}
-                            onChange={handleInputChange}
-                            className="pl-10"
-                            required
-                          />
-                        </div>
-                      </div>
-                      
-                      <div className="space-y-2">
-                        <label htmlFor="email" className="text-sm font-medium text-foreground">
-                          Email Address
-                        </label>
-                        <div className="relative">
-                          <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-                          <Input
-                            id="email"
-                            name="email"
-                            type="email"
-                            placeholder="your.email@company.com"
-                            value={formData.email}
-                            onChange={handleInputChange}
-                            className="pl-10"
-                            required
-                          />
-                        </div>
-                      </div>
+            {/* Left Column - Contact Form + CTA */}
+            <div className="space-y-8">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+              >
+                <Card className="p-8 hover-lift border-0 shadow-lg bg-background/80 backdrop-blur-sm">
+                  <CardContent className="space-y-6 p-0">
+                    <div className="space-y-2">
+                      <h3 className="text-2xl font-bold text-foreground">Send a Message</h3>
+                      <p className="text-muted-foreground">
+                        I'm interested in hearing about new opportunities and collaborations
+                      </p>
                     </div>
 
-                    <div className="space-y-2">
-                      <label htmlFor="subject" className="text-sm font-medium text-foreground">
-                        Subject
-                      </label>
-                      <div className="relative">
-                        <MessageSquare className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-                        <Input
-                          id="subject"
-                          name="subject"
-                          type="text"
-                          placeholder="Job opportunity, collaboration, consultation..."
-                          value={formData.subject}
+                    <form onSubmit={handleSubmit} className="space-y-6">
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="relative space-y-2">
+                          <label htmlFor="name" className="text-sm font-medium text-foreground">
+                            Full Name
+                          </label>
+                          <div className="relative">
+                            <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                            <Input
+                              id="name"
+                              name="name"
+                              type="text"
+                              placeholder="Your full name"
+                              value={formData.name}
+                              onChange={handleInputChange}
+                              className="pl-10"
+                              required
+                            />
+                          </div>
+                        </div>
+                        
+                        <div className="space-y-2">
+                          <label htmlFor="email" className="text-sm font-medium text-foreground">
+                            Email Address
+                          </label>
+                          <div className="relative">
+                            <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                            <Input
+                              id="email"
+                              name="email"
+                              type="email"
+                              placeholder="your.email@company.com"
+                              value={formData.email}
+                              onChange={handleInputChange}
+                              className="pl-10"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="space-y-2">
+                        <label htmlFor="subject" className="text-sm font-medium text-foreground">
+                          Subject
+                        </label>
+                        <div className="relative">
+                          <MessageSquare className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                          <Input
+                            id="subject"
+                            name="subject"
+                            type="text"
+                            placeholder="Job opportunity, collaboration, consultation..."
+                            value={formData.subject}
+                            onChange={handleInputChange}
+                            className="pl-10"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div className="space-y-2">
+                        <label htmlFor="message" className="text-sm font-medium text-foreground">
+                          Message
+                        </label>
+                        <Textarea
+                          id="message"
+                          name="message"
+                          placeholder="Tell me about the opportunity, your project, or how I can help..."
+                          value={formData.message}
                           onChange={handleInputChange}
-                          className="pl-10"
+                          rows={5}
                           required
+                          className="resize-none"
                         />
                       </div>
-                    </div>
 
-                    <div className="space-y-2">
-                      <label htmlFor="message" className="text-sm font-medium text-foreground">
-                        Message
-                      </label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        placeholder="Tell me about the opportunity, your project, or how I can help..."
-                        value={formData.message}
-                        onChange={handleInputChange}
-                        rows={5}
-                        required
-                        className="resize-none"
-                      />
-                    </div>
-
-                    <Button 
-                      type="submit" 
-                      disabled={isSubmitting}
-                      className="w-full py-3 text-lg hover-lift"
-                    >
-                      {isSubmitting ? (
-                        <>
-                          <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                          Sending Message...
-                        </>
-                      ) : (
-                        <>
-                          <Send className="w-5 h-5 mr-2" />
-                          Send Message
-                        </>
-                      )}
-                    </Button>
-                  </form>
-
-                  <div className="pt-4 border-t border-border">
-                    <p className="text-sm text-muted-foreground text-center">
-                      Or email me directly at{' '}
-                      <a 
-                        href="mailto:deepakmanonz@gmail.com?subject=Data Science Opportunity"
-                        className="text-primary hover:underline font-medium"
+                      <Button 
+                        type="submit" 
+                        disabled={isSubmitting}
+                        className="w-full py-3 text-lg hover-lift"
                       >
-                        deepakmanonz@gmail.com
-                      </a>
+                        {isSubmitting ? (
+                          <>
+                            <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                            Sending Message...
+                          </>
+                        ) : (
+                          <>
+                            <Send className="w-5 h-5 mr-2" />
+                            Send Message
+                          </>
+                        )}
+                      </Button>
+                    </form>
+
+                    <div className="pt-4 border-t border-border">
+                      <p className="text-sm text-muted-foreground text-center">
+                        Or email me directly at{' '}
+                        <a 
+                          href="mailto:deepakmanonz@gmail.com?subject=Data Science Opportunity"
+                          className="text-primary hover:underline font-medium"
+                        >
+                          deepakmanonz@gmail.com
+                        </a>
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              {/* CTA Card - Moved to Left Column */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <Card className="p-6 bg-gradient-to-r from-primary/10 via-background/50 to-secondary/10 border-0 shadow-lg">
+                  <CardContent className="text-center space-y-4 p-0">
+                    <h3 className="text-xl font-bold text-foreground">Let's Build Something Amazing</h3>
+                    <p className="text-muted-foreground">
+                      Ready to leverage 9+ years of data science expertise to drive your business forward
                     </p>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
+                    <div className="grid grid-cols-2 gap-4 pt-4">
+                      <Button 
+                        variant="outline" 
+                        size="sm"
+                        onClick={() => window.open('mailto:deepakmanonz@gmail.com?subject=Senior Data Scientist Role&body=Hi Deepak,%0D%0A%0D%0AI would like to discuss a senior data scientist opportunity...', '_blank')}
+                      >
+                        Quick Email
+                      </Button>
+                      <Button 
+                        size="sm"
+                        onClick={() => window.open('tel:+6421083059471', '_self')}
+                      >
+                        Call Now
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </div>
 
             {/* Right Column - Contact Info & Availability */}
             <div className="space-y-8">
@@ -343,37 +377,7 @@ ${formData.name}`)
                 </Card>
               </motion.div>
 
-              {/* CTA Card */}
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                viewport={{ once: true }}
-              >
-                <Card className="p-6 bg-gradient-to-r from-primary/10 via-background/50 to-secondary/10 border-0 shadow-lg">
-                  <CardContent className="text-center space-y-4 p-0">
-                    <h3 className="text-xl font-bold text-foreground">Let's Build Something Amazing</h3>
-                    <p className="text-muted-foreground">
-                      Ready to leverage 9+ years of data science expertise to drive your business forward
-                    </p>
-                    <div className="grid grid-cols-2 gap-4 pt-4">
-                      <Button 
-                        variant="outline" 
-                        size="sm"
-                        onClick={() => window.open('mailto:deepakmanonz@gmail.com?subject=Senior Data Scientist Role&body=Hi Deepak,%0D%0A%0D%0AI would like to discuss a senior data scientist opportunity...', '_blank')}
-                      >
-                        Quick Email
-                      </Button>
-                      <Button 
-                        size="sm"
-                        onClick={() => window.open('tel:+6421083059471', '_self')}
-                      >
-                        Call Now
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
+
             </div>
           </div>
         </div>

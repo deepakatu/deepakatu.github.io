@@ -69,6 +69,15 @@ export default function EducationSection() {
 
   const certifications = [
     {
+      title: "SnowPro® Associate: Platform Certification",
+      issuer: "Snowflake Inc.",
+      year: "2025",
+      description: "Snowflake platform fundamentals including architecture, data loading, and SQL operations",
+      icon: Award,
+      color: "text-cyan-600",
+      logo: "/assets/certifications/snowpro-associate.png"
+    },
+    {
       title: "Visual AI Certificate",
       issuer: "DataRobot",
       year: "2023",
@@ -77,19 +86,11 @@ export default function EducationSection() {
       color: "text-blue-600",
       logo: "/assets/certifications/datarobot-visual-ai.png"
     },
-    {
-      title: "SnowPro® Associate: Platform Certification",
-      issuer: "Snowflake Inc.",
-      year: "2024",
-      description: "Snowflake platform fundamentals including architecture, data loading, and SQL operations",
-      icon: Award,
-      color: "text-cyan-600",
-      logo: "/assets/certifications/snowpro-associate.png"
-    },
+    
     {
       title: "Oracle Certified Professional",
       issuer: "Oracle Corporation",
-      year: "2016",
+      year: "2018",
       description: "Java Programmer Certification demonstrating advanced Java development skills",
       icon: Award,
       color: "text-red-600",
@@ -98,7 +99,7 @@ export default function EducationSection() {
     {
       title: "Oracle SQL Developer Certified Associate",
       issuer: "Oracle Corporation", 
-      year: "2015",
+      year: "2017",
       description: "Database development and SQL optimization certification",
       icon: Star,
       color: "text-orange-600",

@@ -101,7 +101,7 @@ export default function AboutSection() {
 
                   <p className="text-muted-foreground leading-relaxed">
                     My expertise spans from traditional machine learning to cutting-edge <strong className="text-foreground">Generative AI</strong> and 
-                    <strong className="text-foreground">Computer Vision</strong>, with a proven track record of translating complex analytics 
+                    <strong className="text-foreground"> Computer Vision</strong>, with a proven track record of translating complex analytics 
                     into actionable business insights and operational improvements.
                   </p>
 
@@ -175,7 +175,7 @@ export default function AboutSection() {
                 <div className="grid md:grid-cols-4 gap-8">
                   <div className="text-center space-y-2">
                     <div className="text-3xl font-bold text-primary">80%+</div>
-                    <div className="text-sm text-muted-foreground">BSP Forecasting Accuracy</div>
+                    <div className="text-sm text-muted-foreground">Forecasting Accuracy</div>
                   </div>
                   <div className="text-center space-y-2">
                     <div className="text-3xl font-bold text-primary">35%</div>
