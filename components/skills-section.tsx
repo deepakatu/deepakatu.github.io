@@ -96,8 +96,8 @@ export default function SkillsSection() {
   ]
 
   const frameworks = [
-    "Pandas", "NumPy", "Scikit-learn", "PyTorch", "TensorFlow", 
-    "Scipy", "AutoML", "Jupyter", "Matplotlib", "Seaborn"
+    "Pandas", "NumPy", "Scikit-learn", "PyTorch", "TensorFlow", "Keras", 
+    "Scipy", "AutoML", "LightGBM", "XGBoost", "SparkML"
   ]
 
   const containerVariants = {
