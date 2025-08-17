@@ -5,6 +5,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import Image from 'next/image'
 import { 
   GraduationCap, 
   Award, 
@@ -73,7 +74,17 @@ export default function EducationSection() {
       year: "2023",
       description: "Advanced computer vision and AI model development using DataRobot platform",
       icon: Trophy,
-      color: "text-blue-600"
+      color: "text-blue-600",
+      logo: "/assets/certifications/datarobot-visual-ai.png"
+    },
+    {
+      title: "SnowPro® Associate: Platform Certification",
+      issuer: "Snowflake Inc.",
+      year: "2024",
+      description: "Snowflake platform fundamentals including architecture, data loading, and SQL operations",
+      icon: Award,
+      color: "text-cyan-600",
+      logo: "/assets/certifications/snowpro-associate.png"
     },
     {
       title: "Oracle Certified Professional",
@@ -81,7 +92,8 @@ export default function EducationSection() {
       year: "2016",
       description: "Java Programmer Certification demonstrating advanced Java development skills",
       icon: Award,
-      color: "text-red-600"
+      color: "text-red-600",
+      logo: "/assets/certifications/oracle-certified-professional.png"
     },
     {
       title: "Oracle SQL Developer Certified Associate",
@@ -89,7 +101,8 @@ export default function EducationSection() {
       year: "2015",
       description: "Database development and SQL optimization certification",
       icon: Star,
-      color: "text-orange-600"
+      color: "text-orange-600",
+      logo: "/assets/certifications/oracle-sql-developer.png"
     }
   ]
 
@@ -229,7 +242,7 @@ export default function EducationSection() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {certifications.map((cert, index) => (
                 <motion.div
                   key={index}
@@ -238,18 +251,26 @@ export default function EducationSection() {
                 >
                   <Card className="p-6 h-full hover-lift border-0 shadow-md bg-background/80 backdrop-blur-sm text-center">
                     <CardContent className="space-y-4 p-0 flex flex-col h-full">
-                      <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto group-hover:bg-primary/20 transition-colors">
-                        <cert.icon className={`w-8 h-8 ${cert.color}`} />
+                      <div className="w-20 h-20 bg-white rounded-xl flex items-center justify-center mx-auto group-hover:shadow-lg transition-all duration-300 border border-border/50">
+                        <div className="relative w-16 h-16">
+                          <Image
+                            src={cert.logo}
+                            alt={`${cert.title} logo`}
+                            fill
+                            className="object-contain"
+                            sizes="64px"
+                          />
+                        </div>
                       </div>
                       
                       <div className="space-y-2 flex-1">
-                        <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                        <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors text-sm leading-tight">
                           {cert.title}
                         </h4>
-                        <p className="text-sm text-primary font-medium">
+                        <p className="text-xs text-primary font-medium">
                           {cert.issuer}
                         </p>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-xs text-muted-foreground line-clamp-2">
                           {cert.description}
                         </p>
                       </div>
@@ -283,7 +304,7 @@ export default function EducationSection() {
                     <div className="text-sm text-muted-foreground">Degrees Earned</div>
                   </div>
                   <div className="space-y-2">
-                    <div className="text-2xl font-bold text-primary">3</div>
+                    <div className="text-2xl font-bold text-primary">4</div>
                     <div className="text-sm text-muted-foreground">Professional Certifications</div>
                   </div>
                   <div className="space-y-2">

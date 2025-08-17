@@ -28,10 +28,10 @@ export default function Header() {
   }
 
   const downloadCV = () => {
-    // Download the HTML CV file
+    // Download the updated HTML CV file
     const link = document.createElement('a')
-    link.href = '/Deepak_Manoharan_CV.html'
-    link.download = 'Deepak_Manoharan_CV.html'
+    link.href = '/Deepak_Manoharan_Senior_DataScientist_CV.html'
+    link.download = 'Deepak_Manoharan_Senior_DataScientist_CV.html'
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
