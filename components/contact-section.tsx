@@ -83,7 +83,7 @@ ${formData.name}`)
       title: "Phone",
       value: "(021) 0830 5971",
       description: "Available for calls and interviews",
-      action: "tel:+6421083059471"
+      action: "tel:+642108305971"
     },
     {
       icon: MapPin,
@@ -287,7 +287,7 @@ ${formData.name}`)
                       </Button>
                       <Button 
                         size="sm"
-                        onClick={() => window.open('tel:+6421083059471', '_self')}
+                        onClick={() => window.open('tel:+642108305971', '_self')}
                       >
                         Call Now
                       </Button>
