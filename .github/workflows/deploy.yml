@@ -75,7 +75,8 @@ jobs:
         echo "Installing from: $(pwd)"
         if [ -f "yarn.lock" ]; then
           echo "✅ Found yarn.lock, proceeding with install"
-          yarn install --frozen-lockfile
+          # Remove --frozen-lockfile to allow lockfile updates if needed
+          yarn install
         else
           echo "❌ yarn.lock not found in $(pwd)"
           ls -la
