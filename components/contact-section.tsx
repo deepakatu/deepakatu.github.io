@@ -89,7 +89,7 @@ ${formData.name}`)
       icon: MapPin,
       title: "Location",
       value: "Auckland, New Zealand",
-      description: "Available for local opportunities",
+      description: "Available for opportunities in New Zealand and Australia",
       action: null
     }
   ]
@@ -281,7 +281,7 @@ ${formData.name}`)
                       <Button 
                         variant="outline" 
                         size="sm"
-                        onClick={() => window.open('mailto:deepakmanonz@gmail.com?subject=Senior Data Scientist Role&body=Hi Deepak,%0D%0A%0D%0AI would like to discuss a senior data scientist opportunity...', '_blank')}
+                        onClick={() => window.open('mailto:deepakmanonz@gmail.com?subject=Senior Data Scientist Role&body=Hi Deepak,%0D%0A%0D%0AI would like to discuss a senior data scientist opportunity', '_blank')}
                       >
                         Quick Email
                       </Button>
