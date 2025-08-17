@@ -28,9 +28,11 @@ jobs:
 
     - name: Install dependencies
       run: yarn install --frozen-lockfile
+      working-directory: .
 
     - name: Build
       run: yarn build
+      working-directory: .
 
     - name: Setup Pages
       uses: actions/configure-pages@v4
