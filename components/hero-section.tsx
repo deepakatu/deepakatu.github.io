@@ -147,7 +147,7 @@ export default function HeroSection() {
             <div className="w-80 h-80 md:w-96 md:h-96 relative rounded-full overflow-hidden shadow-2xl hover-lift">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 z-10" />
               <Image
-                src="/assets/deepak-profile.jpg"
+                src="/assets/deepak-profile.png"
                 alt="Deepak Manoharan - Senior Data Scientist"
                 fill
                 className="object-cover"
