@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { ArrowDown, Mail, MapPin, Phone } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { Linkedin } from 'lucide-react'
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false)
@@ -87,6 +88,17 @@ export default function HeroSection() {
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4 text-primary" />
               <span>deepakmanonz@gmail.com</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Linkedin className="w-4 h-4 text-primary" />
+              <a
+                href="https://www.linkedin.com/in/deepak-manoharan-8ba493140/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                LinkedIn
+              </a>
             </div>
           </motion.div>
 
