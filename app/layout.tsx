@@ -26,6 +26,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Favicon for browser tab */}
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        {/* Add other meta tags if needed */}
+      </head>
       <body className={inter.className} suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
