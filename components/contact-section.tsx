@@ -299,13 +299,15 @@ ${formData.name}`)
                       >
                         Call Now
                       </Button>
-                      <Button 
-                        variant="outline" 
-                        size="sm"
-                        onClick={() => window.open('https://www.linkedin.com/in/deepak-manoharan-8ba493140/', '_blank')}
-                      >
-                        LinkedIn Profile
-                      </Button>
+                      <div className="flex justify-center pt-4">
+                        <Button 
+                          variant="outline"
+                          size="sm"
+                          onClick={() => window.open('https://www.linkedin.com/in/deepak-manoharan-8ba493140/', '_blank')}
+                        >
+                          LinkedIn Profile
+                        </Button>
+                      </div>
                     </div>
                   </CardContent>
                 </Card>
@@ -331,6 +333,8 @@ ${formData.name}`)
                           {info.action ? (
                             <a 
                               href={info.action}
+                              target="_blank"
+                              rel="noopener noreferrer"
                               className="flex items-start gap-4 p-4 rounded-lg hover:bg-primary/5 transition-colors"
                             >
                               <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
