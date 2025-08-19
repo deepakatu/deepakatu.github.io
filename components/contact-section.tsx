@@ -18,7 +18,8 @@ import {
   Loader2,
   Calendar,
   Briefcase,
-  CheckCircle
+  CheckCircle,
+  Linkedin
 } from 'lucide-react'
 
 export default function ContactSection() {
@@ -91,6 +92,13 @@ ${formData.name}`)
       value: "Auckland, New Zealand",
       description: "Available for opportunities in New Zealand and Australia",
       action: null
+    },
+    {
+      icon: Linkedin,              // Import from lucide-react (see below)
+      title: "LinkedIn",
+      value: "Deepak Mnoharan",
+      description: "Connect with me on LinkedIn",
+      action: "https://www.linkedin.com/in/deepak-manoharan-8ba493140/"
     }
   ]
 
@@ -290,6 +298,13 @@ ${formData.name}`)
                         onClick={() => window.open('tel:+642108305971', '_self')}
                       >
                         Call Now
+                      </Button>
+                      <Button 
+                        variant="outline" 
+                        size="sm"
+                        onClick={() => window.open('https://www.linkedin.com/in/deepak-manoharan-8ba493140/', '_blank')}
+                      >
+                        LinkedIn Profile
                       </Button>
                     </div>
                   </CardContent>
