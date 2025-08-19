@@ -29,7 +29,18 @@ export default function RootLayout({
       <head>
         {/* Favicon for browser tab */}
         <link rel="icon" type="image/png" href="/favicon.png" />
-        {/* Add other meta tags if needed */}
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TZ6XNXNJK"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-4TZ6XNXNJK');
+            `,
+          }}
+        />
       </head>
       <body className={inter.className} suppressHydrationWarning>
         <ThemeProvider
