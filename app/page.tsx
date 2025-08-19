@@ -54,7 +54,7 @@ export default function HomePage() {
           <p className="text-sm mt-2 opacity-80">
             Senior Data Scientist & AI/ML Engineer | Auckland, New Zealand
           </p>
-          <p><VisitorCounter /></p>
+          <VisitorCounter />
         </div>
       </footer>
     </main>
