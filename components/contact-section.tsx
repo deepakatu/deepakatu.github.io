@@ -285,7 +285,7 @@ ${formData.name}`)
                     <p className="text-muted-foreground">
                       Ready to leverage 9+ years of data science expertise to drive your business forward
                     </p>
-                    <div className="grid grid-cols-2 gap-4 pt-4">
+                    <div className="grid grid-cols-3 gap-4 pt-4">
                       <Button 
                         variant="outline" 
                         size="sm"
@@ -299,15 +299,13 @@ ${formData.name}`)
                       >
                         Call Now
                       </Button>
-                      <div className="flex justify-center pt-4">
-                        <Button 
-                          variant="outline"
-                          size="sm"
-                          onClick={() => window.open('https://www.linkedin.com/in/deepak-manoharan-8ba493140/', '_blank')}
-                        >
-                          LinkedIn Profile
-                        </Button>
-                      </div>
+                      <Button 
+                        variant="outline"
+                        size="sm"
+                        onClick={() => window.open('https://www.linkedin.com/in/deepak-manoharan-8ba493140/', '_blank')}
+                      >
+                        LinkedIn Profile
+                      </Button>
                     </div>
                   </CardContent>
                 </Card>
