@@ -7,6 +7,7 @@ import SkillsSection from '@/components/skills-section'
 import ExperienceSection from '@/components/experience-section'
 import ProjectsSection from '@/components/projects-section'
 import EducationSection from '@/components/education-section'
+import VisitorCounter from "@/components/ui/visitor-counter";
 
 // Dynamically import client components with ssr disabled
 const ContactSection = dynamic(() => import('@/components/contact-section'), {
@@ -53,6 +54,7 @@ export default function HomePage() {
           <p className="text-sm mt-2 opacity-80">
             Senior Data Scientist & AI/ML Engineer | Auckland, New Zealand
           </p>
+          <VisitorCounter />
         </div>
       </footer>
     </main>
