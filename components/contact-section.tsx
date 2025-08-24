@@ -84,7 +84,7 @@ ${formData.name}`)
     //   title: "Phone",
     //   value: "(021) 0830 ",
     //   description: "Available for calls and interviews",
-    //   action: "tel:+642108305971"
+    //   action: "tel:+64210830"
     // },
     {
       icon: MapPin,
@@ -285,7 +285,7 @@ ${formData.name}`)
                     <p className="text-muted-foreground">
                       Ready to leverage 9+ years of data science expertise to drive your business forward
                     </p>
-                    <div className="grid grid-cols-3 gap-4 pt-4">
+                    <div className="grid grid-cols-2 gap-4 pt-4">
                       <Button 
                         variant="outline" 
                         size="sm"
@@ -295,12 +295,12 @@ ${formData.name}`)
                       </Button>
                       {/* <Button 
                         size="sm"
-                        onClick={() => window.open('tel:+642108305971', '_self')}
+                        onClick={() => window.open('tel:+64210830', '_self')}
                       >
                         Call Now
                       </Button> */}
                       <Button 
-                        variant="outline"
+                        // variant="outline"
                         size="sm"
                         onClick={() => window.open('https://www.linkedin.com/in/deepak-manoharan-8ba493140/', '_blank')}
                       >

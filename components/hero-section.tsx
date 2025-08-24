@@ -87,7 +87,13 @@ export default function HeroSection() {
             </div> */}
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4 text-primary" />
-              <span>deepakmanonz@gmail.com</span>
+              <span>
+                <a 
+                  href="mailto:deepakmanonz@gmail.com?subject=Data Science Opportunity"
+                  className="text-primary hover:underline font-medium">
+                  deepakmanonz@gmail.com 
+                </a>
+              </span>
             </div>
             <div className="flex items-center gap-2">
               <Linkedin className="w-4 h-4 text-primary" />
