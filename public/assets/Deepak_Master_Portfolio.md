@@ -2,7 +2,7 @@
 
 **Contact Information:**
 - Address: 9 Meredith Street, Blockhouse Bay, Auckland 0600
-- Mobile: (021) 0830 5971
+- Mobile: (021) 0830 
 - Email: deepakmanonz@gmail.com
 
 ---

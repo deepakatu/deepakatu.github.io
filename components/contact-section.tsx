@@ -79,13 +79,13 @@ ${formData.name}`)
       description: "Best way to reach me for opportunities",
       action: "mailto:deepakmanonz@gmail.com"
     },
-    {
-      icon: Phone,
-      title: "Phone",
-      value: "(021) 0830 5971",
-      description: "Available for calls and interviews",
-      action: "tel:+642108305971"
-    },
+    // {
+    //   icon: Phone,
+    //   title: "Phone",
+    //   value: "(021) 0830 ",
+    //   description: "Available for calls and interviews",
+    //   action: "tel:+642108305971"
+    // },
     {
       icon: MapPin,
       title: "Location",
@@ -293,18 +293,18 @@ ${formData.name}`)
                       >
                         Quick Email
                       </Button>
-                      <Button 
+                      {/* <Button 
                         size="sm"
                         onClick={() => window.open('tel:+642108305971', '_self')}
                       >
                         Call Now
-                      </Button>
+                      </Button> */}
                       <Button 
                         variant="outline"
                         size="sm"
                         onClick={() => window.open('https://www.linkedin.com/in/deepak-manoharan-8ba493140/', '_blank')}
                       >
-                        LinkedIn Profile
+                        LinkedIn
                       </Button>
                     </div>
                   </CardContent>

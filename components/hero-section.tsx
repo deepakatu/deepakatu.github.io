@@ -81,10 +81,10 @@ export default function HeroSection() {
               <MapPin className="w-4 h-4 text-primary" />
               <span>Auckland, New Zealand</span>
             </div>
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-primary" />
-              <span>(021) 0830 5971</span>
-            </div>
+              <span>(021) 0830 </span>
+            </div> */}
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4 text-primary" />
               <span>deepakmanonz@gmail.com</span>
