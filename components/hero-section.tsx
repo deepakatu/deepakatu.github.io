@@ -90,7 +90,7 @@ export default function HeroSection() {
               <span>
                 <a 
                   href="mailto:deepakmanonz@gmail.com?subject=Data Science Opportunity"
-                  className="text-primary hover:underline font-medium">
+                  className="hover:underline">
                   deepakmanonz@gmail.com 
                 </a>
               </span>
