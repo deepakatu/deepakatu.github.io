@@ -98,7 +98,7 @@ export default function HeroSection() {
             <div className="flex items-center gap-2">
               <Linkedin className="w-4 h-4 text-primary" />
               <a
-                href="https://www.linkedin.com/in/deepak-manoharan-8ba493140/"
+                href="https://www.linkedin.com/in/deepak-manoharan-nz/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"

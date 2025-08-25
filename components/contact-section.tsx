@@ -98,7 +98,7 @@ ${formData.name}`)
       title: "LinkedIn",
       value: "Deepak Mnoharan",
       description: "Connect with me on LinkedIn",
-      action: "https://www.linkedin.com/in/deepak-manoharan-8ba493140/"
+      action: "https://www.linkedin.com/in/deepak-manoharan-nz/"
     }
   ]
 
@@ -302,7 +302,7 @@ ${formData.name}`)
                       <Button 
                         // variant="outline"
                         size="sm"
-                        onClick={() => window.open('https://www.linkedin.com/in/deepak-manoharan-8ba493140/', '_blank')}
+                        onClick={() => window.open('https://www.linkedin.com/in/deepak-manoharan-nz/', '_blank')}
                       >
                         LinkedIn
                       </Button>
