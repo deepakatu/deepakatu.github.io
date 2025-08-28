@@ -78,6 +78,15 @@ export default function EducationSection() {
       logo: "/assets/certifications/snowpro-associate.png"
     },
     {
+      title: "dbt Fundamentals",
+      issuer: "dbt Labs",
+      year: "2024",
+      description: "Foundational training on dbt core concepts, modeling, and best practices for analytics engineering",
+      icon: Award, // or any appropriate icon like Star or Trophy
+      color: "text-green-600",
+      logo: "/assets/certifications/dbt-fundamentals.png" // Place the logo image in this path or update accordingly
+    },
+    {
       title: "Visual AI Certificate",
       issuer: "DataRobot",
       year: "2023",
@@ -305,7 +314,7 @@ export default function EducationSection() {
                     <div className="text-sm text-muted-foreground">Degrees Earned</div>
                   </div>
                   <div className="space-y-2">
-                    <div className="text-2xl font-bold text-primary">4</div>
+                    <div className="text-2xl font-bold text-primary">5</div>
                     <div className="text-sm text-muted-foreground">Professional Certifications</div>
                   </div>
                   <div className="space-y-2">

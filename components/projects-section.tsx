@@ -74,12 +74,12 @@ export default function ProjectsSection() {
       description: "Sophisticated computer vision models for operational efficiency improvements using cutting-edge AI technologies",
       impact: "90%+ accuracy in computer vision models with measurable operational improvements",
       achievements: [
-        "Led Visual AI, Generative AI, and Cortex AI initiatives using DataRobot and Databricks",
+        "Led Visual AI, Generative AI, and Cortex AI initiatives using Snowflake and DataRobot",
         "Created computer vision models achieving 90%+ accuracy",
         "Established automated MLOps workflows reducing deployment time by 60%",
         "Integrated with Snowflake and AWS for enterprise-scale deployment"
       ],
-      technologies: ["Computer Vision", "DataRobot", "Databricks", "Snowflake", "AWS", "MLOps", "Cortex AI"],
+      technologies: ["Computer Vision", "DataRobot", "Snowflake", "AWS", "MLOps", "Cortex AI"],
       stakeholders: "Operations teams, IT leadership, Engineering departments",
       metrics: {
         accuracy: "90%+",
@@ -95,12 +95,12 @@ export default function ProjectsSection() {
       impact: "Successfully identified multiple fraudulent activities with 85%+ precision in anomaly detection",
       achievements: [
         "Led fraud detection project identifying multiple fraudulent activities",
-        "Implemented ML-based anomaly detection algorithms with >85% precision",
+        "Implemented ML-based anomaly detection algorithms with precision for internal audit teams",
         "Collaborated with Operations and Security teams for fraud prevention measures",
         "Saved significant revenue and improved system integrity"
       ],
       technologies: ["Machine Learning", "Anomaly Detection", "Python", "Statistical Analysis", "Security Analytics"],
-      stakeholders: "Operations teams, Security departments, Executive leadership",
+      stakeholders: "Operations teams, Internal Audit teams, Executive leadership",
       metrics: {
         accuracy: "85%+",
         improvement: "Multiple cases detected",
@@ -120,7 +120,7 @@ export default function ProjectsSection() {
         "Improved query performance by 40% and reduced infrastructure costs by 25%"
       ],
       technologies: ["Snowflake", "AWS Redshift", "dbt", "Snowpark", "Data Engineering", "Cloud Migration"],
-      stakeholders: "IT Operations, Engineering teams, Executive leadership",
+      stakeholders: "IT Operations, Data Engineering teams",
       metrics: {
         accuracy: "100%",
         improvement: "40%",
@@ -158,13 +158,13 @@ export default function ProjectsSection() {
     },
     {
       name: "pdf-expense-extraction", 
-      description: "Automated expense extraction from PDF documents using computer vision and NLP",
-      technologies: ["Computer Vision", "OCR", "NLP", "Python"],
+      description: "Automated expense extraction from PDF documents using pyhton and OCR",
+      technologies: ["PDF extraction", "OCR", "NLP", "Python"],
       status: "Public"
     },
     {
       name: "smart-meter-anomaly-detection",
-      description: "Real-time anomaly detection system for smart meter data with IoT processing",
+      description: "Real-time anomaly detection system for smart meter data",
       technologies: ["Time Series", "Anomaly Detection", "IoT", "Python"],
       status: "Public"
     },

@@ -32,7 +32,7 @@ export default function ExperienceSection() {
         "Developed water consumption forecasting models with >80% BSP accuracy, supporting infrastructure planning for 1.7M+ residents",
         "Built anomaly detection systems reducing false-positive alerts by 35% and enabling identification of multiple fraud cases",
         "Single-handedly led data migration from Redshift to Snowflake, improving query performance by 40% and reducing costs by 25%",
-        "Mentored 2-3 junior staff members while serving as sole data scientist for 2+ years",
+        "Mentored and trained junior staff members in data science best practices and tools",
         "Created MLOps pipelines reducing model deployment time by 60% using AWS Lambda and Azure DevOps"
       ],
       technologies: ["Python", "R", "Snowflake", "AWS", "Azure", "DataRobot", "PowerBI", "MLOps", "Generative AI"],
