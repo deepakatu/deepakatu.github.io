@@ -22,7 +22,7 @@ export default function AboutSection() {
     {
       icon: Users,
       title: "Leadership Excellence",
-      description: "Led cross-functional teams and mentored 2-3 junior staff members while serving as sole data scientist for 2+ years"
+      description: "Led cross-functional collaboration, provided technical guidance, and actively trained peers and junior team members in data science best practices"
     },
     {
       icon: TrendingUp,

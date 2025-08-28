@@ -209,7 +209,7 @@ export default function ExperienceSection() {
                             Key Achievements
                           </h4>
                           <ul className="space-y-2">
-                            {exp.achievements.slice(0, 4).map((achievement, achIndex) => (
+                            {exp.achievements.map((achievement, achIndex) => (
                               <li key={achIndex} className="text-sm text-muted-foreground flex items-start gap-2">
                                 <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
                                 {achievement}
