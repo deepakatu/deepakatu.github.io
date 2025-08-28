@@ -88,7 +88,7 @@ export default function AboutSection() {
                   <h3 className="text-2xl font-bold text-foreground mb-4">Professional Summary</h3>
                   
                   <p className="text-muted-foreground leading-relaxed">
-                    Dynamic and results-driven Senior Data Scientist with <strong className="text-foreground">9+ years</strong> of comprehensive 
+                    Dynamic and results-driven Data Scientist with <strong className="text-foreground">9+ years</strong> of comprehensive 
                     experience in data science, machine learning, and advanced analytics across utilities, telecommunications, 
                     agriculture, and urban infrastructure sectors.
                   </p>

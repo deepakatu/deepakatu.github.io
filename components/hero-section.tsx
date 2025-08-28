@@ -55,7 +55,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Senior Data Scientist &{' '}
+              Data Scientist &{' '}
               <span className="text-gradient">AI/ML Engineer</span>
             </motion.h1>
             
@@ -166,7 +166,7 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 z-10" />
               <Image
                 src="/assets/deepak-profile.png"
-                alt="Deepak Manoharan - Senior Data Scientist"
+                alt="Deepak Manoharan - Data Scientist"
                 fill
                 className="object-cover"
                 priority

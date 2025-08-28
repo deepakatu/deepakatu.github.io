@@ -8,12 +8,12 @@ import { Toaster } from '@/components/ui/toaster'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Deepak Manoharan - Senior Data Scientist & AI/ML Engineer',
+  title: 'Deepak Manoharan - Data Scientist & AI/ML Engineer',
   description: 'Professional portfolio of Deepak Manoharan - 9+ years experience in Data Science, AI/ML, and Analytics. Specializing in Generative AI, LLMs, Python, AWS, and MLOps.',
   keywords: 'Data Scientist, AI Engineer, Machine Learning, Python, AWS, MLOps, Generative AI, Auckland, New Zealand',
   authors: [{ name: 'Deepak Manoharan' }],
   openGraph: {
-    title: 'Deepak Manoharan - Senior Data Scientist & AI/ML Engineer',
+    title: 'Deepak Manoharan - Data Scientist & AI/ML Engineer',
     description: '9+ years experience in Data Science, AI/ML, and Analytics',
     type: 'website',
   },

@@ -52,7 +52,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p>&copy; 2025 Deepak Manoharan. All rights reserved.</p>
           <p className="text-sm mt-2 opacity-80">
-            Senior Data Scientist & AI/ML Engineer | Auckland, New Zealand
+            Data Scientist & AI/ML Engineer | Auckland, New Zealand
           </p>
           <VisitorCounter />
         </div>

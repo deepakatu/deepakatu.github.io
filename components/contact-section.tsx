@@ -289,7 +289,7 @@ ${formData.name}`)
                       <Button 
                         variant="outline" 
                         size="sm"
-                        onClick={() => window.open('mailto:deepakmanonz@gmail.com?subject=Senior Data Scientist Role&body=Hi Deepak,%0D%0A%0D%0AI would like to discuss a senior data scientist opportunity', '_blank')}
+                        onClick={() => window.open('mailto:deepakmanonz@gmail.com?subject=Data Scientist Role&body=Hi Deepak,%0D%0A%0D%0AI would like to discuss a data scientist opportunity', '_blank')}
                       >
                         Quick Email
                       </Button>
