@@ -90,7 +90,7 @@ ${formData.name}`)
       icon: MapPin,
       title: "Location",
       value: "Auckland, New Zealand",
-      description: "Available for opportunities in New Zealand and Australia",
+      description: "Available for opportunities in New Zealand",
       action: null
     },
     {
