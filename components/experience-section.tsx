@@ -69,8 +69,8 @@ export default function ExperienceSection() {
       title: "Geospatial Analyst",
       company: "TracMap Ltd",
       location: "Mosgiel, New Zealand",
-      duration: "2018 – 2019", 
-      type: "Contract Role",
+      duration: "2017 – 2018", 
+      type: "Industrial Research Project",
       companyInfo: "Agricultural technology and farm management solutions",
       achievements: [
         "Conducted spatial data analysis and time-series analysis on large agricultural datasets",
@@ -91,7 +91,7 @@ export default function ExperienceSection() {
       company: "Tata Consultancy Services",
       location: "India",
       duration: "2014 – 2017",
-      type: "Client Project",
+      type: "Consulting Role",
       companyInfo: "Telecom Analytics for TalkTalk, UK - Major telecommunications client",
       achievements: [
         "Conducted comprehensive data analysis and generated insights reports for UK telecom operations",
